@@ -2,25 +2,12 @@
 
 Pingpong:
 Scipio
-Bert - 1
-Meerval
-
-Plein:
-Pieter
-Daniel - 5
-Sjoerd
-
-Cave:
-Laurens
 Patrick - 3
-Cas
-
-Wijvenhuis1:
-Gijs - 2
-Elyas
-Raf
+Floris
+Nick
 
 Wijvenhuis2:
-Random - 11
-Milan
-Floris
+Jules - 4
+Raf
+Jair
+Cas

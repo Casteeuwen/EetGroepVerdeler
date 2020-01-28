@@ -6,9 +6,16 @@ class Huis:
         self.tenants = []
         self.eaters = []
         self.cook = None
+        self.available = False
 
     def addTenant(self, lid):
         self.tenants.append(lid)
+
+    def isAvailable(self):
+        return self.available
+
+    def setAvailable(self,boolean):
+        self.available = boolean
 
     def setCook(self, cook):
         self.cook = cook
