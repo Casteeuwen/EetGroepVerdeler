@@ -1,13 +1,23 @@
 
 
-Pingpong:
-Scipio
-Patrick - 3
-Floris
-Nick
-
-Wijvenhuis2:
-Jules - 4
+Plein:
+Meerval
+Random - 11
 Raf
 Jair
+Floris
+Sjoerd
+
+Cave:
+Laurens
+Gijs - 2
 Cas
+Jules
+Scipio
+
+Extra Huis 1:
+Patrick - 3
+Pieter
+Elyas
+Daniel
+Bert

@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from Huis import Huis
 
 import tkinter
 
@@ -41,16 +42,41 @@ class GUIHandler:
         for huis in huizen:
             naam = huis.getName()
             mijnvar = tkinter.BooleanVar()
-            Label(self.root, text=naam, width=15).grid(row=rowcounter, column = 2)
+            Label(self.root, text=naam, width=20).grid(row=rowcounter, column = 2)
             c = Checkbutton(self.root, variable=mijnvar)
             c.grid(row=rowcounter, column=3)
             rowcounter = rowcounter + 1
             tuple = [huis, mijnvar]
             self.huisUsageTuples.append(tuple)
+        ###########################################################
 
+        ####Append textboxes for extra houses######################
+        self.possibleHouses = []
+        for i in range(5):
+            mijnvar = tkinter.BooleanVar()
+            houseNameEntry = Entry(width=20)
+            houseNameEntry.grid(row=rowcounter, column=2)
+            c = Checkbutton(self.root, variable=mijnvar)
+            c.grid(row=rowcounter, column=3)
+            tuple = [houseNameEntry, mijnvar]
+            self.possibleHouses.append(tuple)
+            rowcounter = rowcounter + 1
+        ###########################################################
         mainloop()
 
 
+
+    def getPossibleHouses(self):
+        newhouses = []
+        for tuple in self.possibleHouses:
+            #print(tuple[0]," ",tuple[1])
+            # if len(tuple[0].get()) > 0:
+            #     print(" ait")
+            if len(tuple[0].get())>0 and tuple[1].get()==1:
+                newHouse = Huis(tuple[0].get())
+                newhouses.append(newHouse)
+
+        return newhouses
 
 
     def getGUIHuizen(self):

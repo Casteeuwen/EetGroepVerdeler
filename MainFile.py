@@ -199,6 +199,12 @@ def clicked():
         EETHUIZEN.append(eethuis)
         eethuis.setAvailable(True)
 
+    newhouses = GUI.getPossibleHouses()
+    for newhouse in newhouses:
+        EETHUIZEN.append(newhouse)
+        newhouse.setAvailable(True)
+
+
     try:
         distributeEaters(eters,EETHUIZEN)
         #seeEaters()
